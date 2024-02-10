@@ -1,5 +1,5 @@
 ROMAN_NUMERALS = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-VALID_PRECEDENCE = {"I": ("V", "X"), "X": ("L", "C"), "C": ("D", "M"), "V": ("L")}
+VALID_PRECEDENCE = {"I": ("V", "X"), "X": ("L", "C"), "C": ("D", "M"), "V": ("L",)}
 INVALID_REPETITIONS = ["VV", "LL", "DD", "IIII", "XXXX", "CCCC"]
 INVALID_PAIRS = ["LC", "DM"]
 
