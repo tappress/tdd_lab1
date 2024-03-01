@@ -115,12 +115,11 @@ def test_mixed_case_input():
 @pytest.mark.parametrize(
     "non_standard,expected",
     [
-        # Assuming the function strictly follows standard rules and rejects "IC"
         ("IC", 99),
     ],
 )
 def test_non_standard_but_sometimes_seen_numerals(non_standard, expected):
-    with pytest.raises(ValueError):  # Adjust based on function behavior
+    with pytest.raises(ValueError):
         roman_to_decimal(non_standard)
 
 

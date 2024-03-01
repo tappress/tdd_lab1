@@ -55,17 +55,12 @@ def roman_to_decimal(roman: str) -> int:
     decimal = 0
     prev_value = 0
 
-    # Reverse iterate over the Roman numeral string
     for char in reversed(roman):
-        value = ROMAN_NUMERALS[
-            char
-        ]  # Get the decimal value of the current Roman numeral
+        value = ROMAN_NUMERALS[char]
 
         if value < prev_value:
-            # If the current value is less than the previous value, subtract it
             decimal -= value
         else:
-            # Otherwise, add it to the total
             decimal += value
 
         prev_value = value
